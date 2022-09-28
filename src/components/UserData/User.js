@@ -34,6 +34,18 @@ const User = () => {
           <p className="age">Age</p>
         </div>
       </div>
+      {/* add a brack */}
+      <div className="">
+        <h2 className="h2">Add A Break</h2>
+        <div className="brack-list">
+          <button className="btn-time">10m</button>
+          <button className="btn-time">20m</button>
+          <button className="btn-time">30m</button>
+          <button className="btn-time">40m</button>
+          <button className="btn-time">50m</button>
+          <button className="btn-time">60m</button>
+        </div>
+      </div>
     </div>
   );
 };

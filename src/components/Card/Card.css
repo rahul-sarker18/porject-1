@@ -1,0 +1,18 @@
+.main-cart{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.time-count-div{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.times{
+    color: rgb(0, 34, 255);
+    font-size: 20px;
+    font-weight: 800;
+}

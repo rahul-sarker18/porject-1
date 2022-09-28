@@ -1,7 +1,7 @@
 import React from 'react';
 import './AllGame.css'
 
-const AllGame = ({data}) => {
+const AllGame = ({data ,addtocart}) => {
     const {name , time ,img} =data;
 
     return (
@@ -11,7 +11,7 @@ const AllGame = ({data}) => {
             </div>
             <h5>{name}</h5>
             <p>Time required: <span className='time'>{time}</span> M</p>
-            <button className='btn-ad'>Add to cart</button>
+            <button onClick={()=>addtocart(data)} className='btn-ad'>Add to cart</button>
         </div>
     );
 };
