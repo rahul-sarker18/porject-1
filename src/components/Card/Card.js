@@ -1,12 +1,15 @@
 import React from 'react';
 import Swal from 'sweetalert2'
-
 import './Card.css'
 
-const Card = ({cart}) => {
+const Card = ({cart ,brt}) => {
     let time =0;
     for(const ide of cart){
         time = time + ide.time
+    }
+    let bracktime =0;
+    for(const brts of brt){
+        bracktime =brts.time;
     }
     const switall =()=>{
         Swal.fire(
@@ -15,7 +18,7 @@ const Card = ({cart}) => {
             'success'
           )
     }
-    console.log(time)
+
     return (
         <div className='main-cart'>
             <div>
@@ -29,7 +32,7 @@ const Card = ({cart}) => {
             <div>
             <div className='time-count'>
                     <h4>Break time</h4>
-                    <h4><span className='times'>{}</span>(m)</h4>
+                    <h4><span className='times'>{bracktime}</span>(m)</h4>
                 </div>
             </div>
 

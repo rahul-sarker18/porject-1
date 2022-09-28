@@ -1,0 +1,9 @@
+.btn-time{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%; 
+}
+.btn-time:hover{
+    background-color: brown;
+    transition: all ease-in-out 0.7s;
+}

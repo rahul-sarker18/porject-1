@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AllGame from "../AllGame/AllGame";
+import Brack from "../Brack/Brack";
 import Card from "../Card/Card";
 import logo from "../img/logo.png"
 import User from "../UserData/User";
@@ -11,13 +12,30 @@ const Data = () => {
     fetch("products.json")
       .then((res) => res.json())
       .then((datas) => setApi(datas));
+  }, []);  
+
+  const [cart, setcart] = useState([]);
+  const addTocart = (apidata) => {
+    setcart([...cart, apidata]);
+  };
+
+// brack time count 
+
+  const [brack, setBrack] = useState([]);
+  useEffect(() => {
+    fetch("brack.json")
+      .then((res) => res.json())
+      .then((datas => setBrack(datas)));
   }, []);
 
-  const [cart , setcart] =useState([]);
-  const addTocart =(apidata)=>{
-    const newcart = [...cart ,apidata]
-    setcart(newcart);
+  const [br ,setBr] =useState([]);
+  const addtobrack =(brak)=>{
+    const newbr =[...br ,brak]
+    setBr(newbr)
   }
+  console.log(br)
+
+
   return (
     <div className="data-component">
       <div className="all-data">
@@ -38,9 +56,23 @@ const Data = () => {
       </div>
       <div className="all-card">
         {/* user  */}
+     
         <User></User>
 
-        <Card cart ={cart}></Card>
+        <div className="brak-mar">
+        {
+            brack.map(brk => <Brack
+                 bracks ={brk}
+                 key ={brk.id}
+                 breackHendel ={addtobrack}
+                 ></Brack>)
+        }
+        </div>
+
+        <Card
+         cart ={cart}
+         brt ={br}
+        ></Card>
 
 
        

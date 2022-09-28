@@ -1,14 +1,7 @@
-import React, { useState } from "react";
+
 import user from "../img/user.png"
 import './User.css'
 const User = () => {
-  // const [s ,sets]=useState([])
-  // const hendel=(e)=>{
-  //   console.log(e.target.value);
-  //   console.log('ame consol')
-
-  // }
-
   
   return (
     <div>
@@ -45,14 +38,7 @@ const User = () => {
       {/* add a brack */}
       <div className="">
         <h2 className="h2">Add A Break</h2>
-        <div className="brack-list">
-          <button className="btn-time" name="s">10m</button>
-          <button className="btn-time"><span>20</span> m</button>
-          <button className="btn-time"><span>30</span>m</button>
-          <button className="btn-time"><span>40</span>m</button>
-          <button className="btn-time"><span>50</span>m</button>
-          <button className="btn-time"><span>60</span>m</button>
-        </div>
+        
       </div>
     </div>
   );

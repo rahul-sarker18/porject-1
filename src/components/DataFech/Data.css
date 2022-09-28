@@ -22,3 +22,14 @@
 .lofo-div h1{
     color: maroon;
 }
+.brak-mar{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 90%;
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin: auto;
+}
