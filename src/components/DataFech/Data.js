@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AllGame from "../AllGame/AllGame";
 import logo from "../img/logo.png"
+import user from "../img/user.png"
 import "./Data.css";
 
 const Data = () => {
@@ -27,7 +28,13 @@ const Data = () => {
       </div>
       <div className="all-card">
         {/* user  */}
-       
+        <div className="user-name">
+            <img src="" alt="" className="user-img"/>
+            <div>
+                <h3>Rahul Sarker</h3>
+                <p>Nodia ,INDIA</p>
+            </div>
+        </div>
 
 
 
