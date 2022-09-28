@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AllGame from "../AllGame/AllGame";
 import logo from "../img/logo.png"
-import user from "../img/user.png"
+import User from "../UserData/User";
 import "./Data.css";
 
 const Data = () => {
@@ -16,29 +16,20 @@ const Data = () => {
     <div className="data-component">
       <div className="all-data">
         <div className="lofo-div">
-            <img src= {logo} alt="" width={50} />
-            <h1>Every_Day_Game_Club</h1>
+          <img src={logo} alt="" width={50} />
+          <h1>Every_Day_Game_Club</h1>
         </div>
         <h2>Select today’s game :-- </h2>
         <div className="all-card-div">
-            {
-                api.map(data => <AllGame data={data}></AllGame>)
-            }
+          {api.map((data) => (
+            <AllGame data={data}></AllGame>
+          ))}
         </div>
       </div>
       <div className="all-card">
         {/* user  */}
-        <div className="user-name">
-            <img src="" alt="" className="user-img"/>
-            <div>
-                <h3>Rahul Sarker</h3>
-                <p>Nodia ,INDIA</p>
-            </div>
-        </div>
-
-
-
-
+        <User></User>
+       
       </div>
     </div>
   );
