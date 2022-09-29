@@ -33,3 +33,42 @@
     padding-left: 10px;
     margin: auto;
 }
+
+
+
+
+/* mobil divise  */
+@media screen and (max-width:688px) {
+    .data-component{
+       display: block;
+       justify-content: center;
+    }
+    .all-card-div{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .all-card{
+        margin-top: 100px;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* tablrt divise  */
+@media screen and (min-width: 689px) and (max-width:992px){
+    .data-component{
+        display: block;
+        justify-content: center;
+     }
+     .all-card-div{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2 ,1fr); 
+    }
+    .all-card{
+        margin-top: 100px;
+        width: 90%;
+        margin: auto;
+    }
+}

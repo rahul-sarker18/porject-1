@@ -28,12 +28,33 @@ const Data = () => {
       .then((datas => setBrack(datas)));
   }, []);
 
+//   local storage add 
+//   useEffect(()=>{
+//     const get =localStorage.getItem('time')
+//     const last =JSON.parse(get);
+//     if(last){
+//         setBr(last);
+//     }
+
+//   }, [brack])
+
   const [br ,setBr] =useState([]);
   const addtobrack =(brak)=>{
     const newbr =[...br ,brak]
     setBr(newbr)
+
+    // const inf ={
+    //    ...brak
+    // }
+    // const get =localStorage.getItem('time')
+    // const last =JSON.parse(get);
+    // if(last){
+    //     localStorage.setItem('time' ,JSON.stringify([...last ,inf]))
+    // }else{
+    //     localStorage.setItem('time' ,JSON.stringify([...last ,inf]))
+    // }
+    // setBr(...last ,inf);
   }
-  console.log(br)
 
 
   return (
@@ -73,8 +94,6 @@ const Data = () => {
          cart ={cart}
          brt ={br}
         ></Card>
-
-
        
       </div>
     </div>
