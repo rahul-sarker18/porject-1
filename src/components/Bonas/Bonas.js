@@ -3,10 +3,10 @@ import './Bonas.css'
 
 const Bonas = () => {
   return (
-    <div>
-      <div>
-        <h4>1. How does react work</h4>
-        <p>
+    <div className="mm">
+      <div className="bonas-div">
+        <h4 className="h4">1. How does react work</h4>
+        <p className="p">
           React uses a declarative paradigm that makes it easier to reason about
           your application and aims to be both efficient and flexible. It
           designs simple views for each state in your application, and React
@@ -14,9 +14,9 @@ const Bonas = () => {
           data changes.
         </p>
       </div>
-      <div>
-        <h4>2. Difference between props and state</h4>
-        <p>
+      <div className="bonas-div">
+        <h4 className="h4">2. Difference between props and state</h4>
+        <p className="p">
           Simply put, State is the local state of the component which cannot be
           accessed and modified outside of the component. It's equivalent to
           local variables in a function. Props, on the other hand, make
@@ -24,9 +24,9 @@ const Bonas = () => {
           from their parent component in the form of props.
         </p>
       </div>
-      <div>
-        <h4>3.The useeffect api is used for other purposes than data lode</h4>
-        <p>
+      <div className="bonas-div">
+        <h4 className="h4">3.The useeffect api is used for other purposes than data lode</h4>
+        <p className="p">
           useEffect runs on every render. That means that when the count
           changes, a render happens, which then triggers another effect. This is
           not what we want. There are several ways to control when side effects
